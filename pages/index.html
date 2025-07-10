@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Hernandez | Portfolio</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">Brayan Hernandez</div>
+
+      <!-- Checkbox oculto para el toggle -->
+      <input type="checkbox" id="menu-toggle" class="header__toggle" />
+
+      <!-- Ícono hamburguesa -->
+      <label for="menu-toggle" class="header__burger"> &#9776; </label>
+
+      <nav class="header__navbar">
+        <ul class="header__navbar__tabs">
+          <li class="header__navbar__tabs__tab">
+            <a class="header__navbar__tabs__tab__link" href="#home">Home</a>
+          </li>
+          <li class="header__navbar__tabs__tab">
+            <a class="header__navbar__tabs__tab__link" href="#about">About</a>
+          </li>
+          <li class="header__navbar__tabs__tab">
+            <a class="header__navbar__tabs__tab__link" href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li class="header__navbar__tabs__tab">
+            <a class="header__navbar__tabs__tab__link" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HOME -->
+      <section id="home" class="main__section main__section__home">
+        <div class="main__section__home__intro">
+          <h2>Hi, I'm Brayan 👋</h2>
+          <p class="main__section__home__tagline">
+            Developer passionate about clean code and creative design.
+          </p>
+        </div>
+
+        <div class="main__section__home__avatar">
+          <img src="../resources/img/foto2.jpeg" alt="Avatar" />
+          <div id="bubble-text">¡Hola! 👋</div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="main__section main__section__about">
+        <h2>About Me</h2>
+
+        <div class="main__section__about__container">
+          <!-- Columna izquierda: Descripción -->
+          <div class="main__section__about__container__bio">
+            <p>
+              I'm a developer from Bogotá, Colombia, passionate about creating
+              intuitive and accessible web experiences. I focus on writing clean
+              code, using modern frameworks, and delivering user-centered
+              interfaces.
+            </p>
+          </div>
+
+          <!-- Columna derecha: Detalles rápidos -->
+          <div class="main__section__about__container__info">
+            <ul class="main__section__about__container__info__list">
+              <li>
+                <strong>🎓 Education:</strong> Universidad Distrital FJ de
+                Caldas
+              </li>
+              <li><strong>📍 Location:</strong> Bogotá, Colombia</li>
+              <li><strong>💼 Role:</strong> Developer</li>
+              <li><strong>🛠️ Stack:</strong> HTML, CSS, JavaScript, React</li>
+            </ul>
+
+            <div class="main__section__about__education">
+              <img
+                src="../resources/img/logo-ud.png"
+                alt="Logo Universidad Distrital"
+                class="main__section__about__education__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="main__section main__section__projects">
+        <h2>My Projects</h2>
+        <p>
+          Here are a few examples of the work I’ve done, including personal and
+          collaborative web development projects.
+        </p>
+
+        <!-- Contenedor para los proyectos traídos de GitHub -->
+        <div id="github-projects" class="main__section__projects__list"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="main__section main__section__contact">
+        <h2>Contact Me</h2>
+        <p>
+          If you’d like to collaborate, discuss a project, or just say hi — feel
+          free to reach out!
+        </p>
+
+        <div class="main__section__contact__methods">
+          <a
+            href="mailto:brayanhernandezmartinez@gmail.com"
+            class="main__section__contact__link"
+          >
+            📧 brayanhernandezmartinez@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brayan-esneider-hernandez-martinez-a661bb169/"
+            target="_blank"
+            class="main__section__contact__link"
+          >
+            🔗 LinkedIn
+          </a>
+          <a
+            href="https://github.com/esnamer97"
+            target="_blank"
+            class="main__section__contact__link"
+          >
+            💻 GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../behaviors/avatar-interactive.js"></script>
+    <script src="../behaviors/github-projects.js"></script>
+  </body>
+</html>
