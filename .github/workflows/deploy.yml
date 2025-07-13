@@ -26,9 +26,11 @@ jobs:
 
       - name: Preparar carpeta de despliegue
         run: |
+          run: |
           mkdir -p dist
           cp index.html dist/
-          cp styles/main.css dist/
+          cp styles/main.css dist/styles/main.css
+          cp -r styles/img dist/styles/img
 
       - name: Publicar en GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
