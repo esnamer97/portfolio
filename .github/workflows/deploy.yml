@@ -32,8 +32,8 @@ jobs:
           mkdir -p dist/behaviors
           cp index.html dist/
           cp styles/main.css dist/styles/main.css
-          cp -r resources/ dist/resources/
-          cp -r behaviors/ dist/behaviors/
+          cp -r resources/ dist/
+          cp -r behaviors/ dist/
 
       - name: Publicar en GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
