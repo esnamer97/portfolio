@@ -26,7 +26,6 @@ jobs:
 
       - name: Preparar carpeta de despliegue
         run: |
-          run: |
           mkdir -p dist
           cp index.html dist/
           cp styles/main.css dist/styles/main.css
