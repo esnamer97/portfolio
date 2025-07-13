@@ -26,7 +26,6 @@ jobs:
 
       - name: Preparar carpeta de despliegue
         run: |
-          rm -R dist
           mkdir -p dist
           mkdir -p dist/styles
           mkdir -p dist/resources
